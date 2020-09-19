@@ -1,0 +1,29 @@
+.pictures{
+  margin-left: 20%;
+}
+
+.my_italic_p{
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.my_header{
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.my_div{
+  text-align: left;
+  margin-left: 8%;
+}
+
+.my_small_p{
+  margin-top: 0;
+  font-size: 0.9rem;
+  /* max-width:1800px;
+  word-wrap:break-word; */
+}
+
+body{
+  background-color: rgb(211, 245, 255);
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/jspsych.css" rel="stylesheet" type="text/css">
+    <title>Blue</title>
+</head>
+<body>
+    <img src='pics/bgu-logo.png' style='max-width:10%;'></img>
+    <div style="margin-top: 8%; margin-left: 38%;">
+        <img src='<%=bluePic%>' style="margin-left: 5%;"> </img>
+        <h2>Please press any key to continue</h2>
+        <script>
+            document.addEventListener("keypress",function(event){
+                window.location.href = window.location.href.substring(0, window.location.href.length-11) + "card";
+            });
+        </script>
+    </div>
+</body>
+</html>

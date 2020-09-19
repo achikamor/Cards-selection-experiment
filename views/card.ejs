@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/jspsych.css" rel="stylesheet" type="text/css">
+    <title>choose</title>
+</head>
+<body>
+    <div style='text-align:center; font-size: 1.5rem;'>
+        <p>בניסוי זה יופיעו מולך 2 קלפים, בכל שלב עליך לבחור בקלף</p>
+        <p>לכל קלף יש את השווי שלו</p>
+        <p>הסכום שתבחר בכל שלב יצטבר לכדי סכום כולל שאותו תקבל בסוף הניסוי.</p>
+        <p>כדי לבחור בקלף הרצוי אנא הכנס/י את מספר הקלף במלבן ולחצ/י אנטר או על הכפתור שלידו</p>
+        <div class="pictures">
+            <div style='width: 700px; padding-left:8%;'>
+                <div style='float: left;'>
+                    <img class="picture" src='pics/blue_card.png'></img>
+                    <p class='small'>
+                        <p>for blue card: <%= bluePrice%></p>
+                        <strong>Press 1</strong>
+                    </p>
+                </div>
+    
+                <div style="float: right; ">
+                    <img class="picture" src='pics/red_card.png'></img>
+                    <p class='small'>
+                        <p>for red card: <%= redPrice%> </p>
+                        <strong>Press 2</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/card" method="POST" autocomplete="off" style="margin-left: 40%;">
+        <input type="text" name="selection">
+        <button type="submit" name="submit">Choose</button>
+    </form>
+
+    
+</body>
+</html>

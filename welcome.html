@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/jspsych.css" rel="stylesheet" type="text/css">
+    <title>Welcome</title>
+    <script language="javascript">
+        // var fso = new ActiveXObject("Scripting.FileSystemObject");
+        // var a = fso.CreateTextFile("C:\\Users\\AchikamPC\\Desktop\\Niv3\\data\\Mytext.txt", true);
+        // a.WriteLine("This is a test.");
+        // a.Close();
+        // alert("welcome");
+    </script>
+</head>
+<body>
+    <div style='text-align:center; font-size: 1.5rem;'>
+        <img src='pics/bgu-logo.png' style='max-width:20%;'></img>
+        <h3>Study Title: Card selection task</h3>
+        <p class='my_italic_p'>Please read this consent form carefully before deciding whether you would like to participate in this study.</p>
+    </div>
+    <div class='my_div'>
+        <h5 class='my_header'>Purpose of the Study:</h5>
+        <p class='my_small_p'>Which factors influence how people explore their environment and manifest their preferences towards different stimuli? We hope to learn how quickly<br>and accurately people learn contingencies and how do they affect subsequent decisions.</p>
+        <h5 class='my_header'>What you will do in this study:</h5>
+        <p class='my_small_p'>You will indicate your preferences towards two presented decks of cards differing in the amount of their associated value and information.<br>You will make responses using a device of your choosing. You will also indicate your comprehension of the task and fill out a few additional questionnaires. </p>
+        <h5 class='my_header'>Time Required:</h5>
+        <p class='my_small_p'> The study will take approximately 15 minutes to complete.</p>
+        <h5 class='my_header'>Risks:</h5>
+        <p class='my_small_p'>There are no anticipated risks associated with being in this study.</p>
+        <h5 class='my_header'>Benefits:</h5>
+        <p class='my_small_p'> At the end of the study, we will provide a thorough explanation of the study and of our hypotheses. There are no foreseeable individual benefits to you as a participant.</p>
+        <h5 class='my_header'>Compensation:</h5>
+        <p class='my_small_p'> You will receive the amount of pay specified on the sign-up page. Full payment will be given upon indication of successful task completion.</p>
+        <h5 class='my_header'>Confidentiality:</h5>
+        <p class='my_small_p'>Your participation in this study will remain confidential. Your responses will be assigned a code number, and the list connecting your identity with this number will be kept on a password-protected computer in a locked room, separate from the rest of your data. After the completion of data collection we will destroy the code linking your identity to your data.<br>De-identified data will be kept indefinitely and shared publicly for research purposes, but no identifying information will be shared. Identifiable details, including names, will be retained for 7 years and will be destroyed afterwards, as required by regulations.</p>
+        <h5 class='my_header'>Participation and withdrawal:</h5>
+        <p class='my_small_p'>Your participation in this study is completely voluntary.  You may skip any questions/tasks you do not want to complete.  You may withdraw at any time without penalty or loss of benefit to which you are otherwise entitled by simply closing the browser window or tab in which you are taking the survey. We encourage you to save this and the following screens via printing or a screenshot to retain our contact information and/or the questions asked..</p>
+    </div>
+    <p>Press 'y' to continue</p>
+    <script>
+        document.addEventListener('keypress', function(event){
+            var pressed = event.key;
+            var current_location = window.location.href;
+            if(pressed === 'y' || pressed == "Y")
+                window.location.href = current_location + "card";
+        })
+    </script>
+</body>
+</html>
